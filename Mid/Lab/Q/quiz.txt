@@ -1,0 +1,27 @@
+void setup() {
+  pinMode(8, OUTPUT);  // RED
+  pinMode(10, OUTPUT); // GREEN
+  pinMode(12, OUTPUT); // BLUE
+}
+
+void loop() {
+  
+  digitalWrite(8, HIGH); 
+  delay(40000);          
+  digitalWrite(8, LOW);  
+  digitalWrite(10, HIGH); 
+  delay(60000);         
+
+  
+  digitalWrite(10, LOW);
+  digitalWrite(12, HIGH);
+  for (int i = 0; i < 10; i++) 
+{ 
+    digitalWrite(12, HIGH); 
+    delay(500); 
+    digitalWrite(12, LOW); 
+    delay(500);
+  }
+  digitalWrite(10, LOW);
+  digitalWrite(12, LOW); 
+}

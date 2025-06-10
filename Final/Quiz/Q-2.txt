@@ -1,0 +1,1 @@
+ Determine the necessary register setup to operate a microcontroller in the fast PWM (inverting) mode. The counter should count to a maximum value of 175 and then reset to the BOTTOM and repeat. Draw the necessary timing waveform. Use a Timer0 of the Arduino Microcontroller.  
